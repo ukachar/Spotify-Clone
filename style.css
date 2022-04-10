@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+html {
+  background: #1b1b1b;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+
+  background: lightgrey;
+}
+
+#headerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b1b1b;
+}
+
+#headerContainer img {
+  max-width: 90px;
+}
+
+.container {
+  display: flex;
+  padding-left: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
