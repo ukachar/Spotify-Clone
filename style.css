@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -8,31 +10,88 @@ html {
 
 header {
   width: 100%;
-  height: 100px;
-
-  background: lightgrey;
+  height: 60px;
 }
 
 #headerContainer {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #1b1b1b;
 }
 
-#headerContainer img {
-  max-width: 90px;
-}
-
-.container {
-  display: flex;
-  padding-left: 20px;
-}
-
-h2 {
+#headerHeading {
+  width: 100%;
   color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+  display: flex;
+  font-size: 14px;
+  margin: 30px 0 0 20px;
+}
+
+#headerIcons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+
+#headerIcons img {
+  color: #fff;
+  max-width: 28px;
+  margin-right: 15px;
+}
+
+/* MAIN */
+
+main {
+  padding: 0 10px 0 10px;
+}
+
+.mbody {
+  margin-top: 50px;
+}
+
+.mainTop {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.mtiImg img {
+  max-width: 64px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.mainTopItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-radius: 5px;
+  background: #2a2a2a;
+}
+
+.mtiDesc {
+  padding-left: 10px;
+}
+
+.mbodyItems {
+  display: flex;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+  gap: 10px;
+}
+
+.mbodyItems::-webkit-scrollbar {
+  display: none;
+}
+
+.mbodyMixImg img {
+  max-width: 180px;
+  max-height: 180px;
 }
