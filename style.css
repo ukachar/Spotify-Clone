@@ -378,7 +378,7 @@ main {
 
 /* DESKTOP VIEW*/
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 800px) {
   /*SIDENAV*/
 
   .bottomNav {
@@ -390,11 +390,119 @@ main {
     left: 0;
     background: #000000; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  #bottomNavHome,
+  #bottomNavSearch,
+  #bottomNavLib {
+    flex-direction: row;
+    margin: 20px 0 0 20px;
+  }
+
+  #bottomNavHome img,
+  #bottomNavSearch img,
+  #bottomNavLib img {
+    margin-right: 20px;
+    max-width: 26px;
   }
 
   header,
   main,
   .libraryHeader {
     margin-left: 250px;
+  }
+
+  .hideOnDesktop {
+    display: none;
+  }
+
+  #bottomNavHome {
+    padding-top: 40px;
+  }
+
+  #hrNavDesktop {
+    margin-top: 10px;
+    width: 100%;
+
+    border-color: rgb(255, 255, 255, 0.4);
+  }
+
+  .bottomNavPlaylists {
+    margin: 20px 0 0 10px;
+  }
+
+  .bottomNavPlaylists p {
+    margin-top: 10px;
+    cursor: pointer;
+    color: lightgrey;
+  }
+
+  .bottomNavPlaylists p:hover {
+    color: #fff;
+  }
+
+  /*Home finese*/
+  .mainTop {
+    column-gap: 15px;
+    row-gap: 10px;
+  }
+
+  .mainTopItem:hover {
+    background: #444444;
+    cursor: pointer;
+  }
+
+  /*PLAYING BAR*/
+  .playingBar {
+    height: 10%; /* Full-height: remove this if you want "auto" height */
+    width: 100%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 2; /* Stay on top */
+    bottom: 0; /* Stay at the top */
+    left: 0;
+    background: red; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .playingBarSong {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .playingBarSong img {
+    max-width: 64px;
+  }
+
+  .playingBarSong img:hover {
+    cursor: pointer;
+  }
+
+  #playingBarSongInfo {
+    margin-left: 10px;
+  }
+
+  #playingBarSongInfo p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+/*MOBILE VIEW*/
+@media screen and (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
   }
 }
