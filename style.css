@@ -125,6 +125,7 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 100vw;
+  color: lightgrey;
 }
 
 #bottomNavHome img {
@@ -421,10 +422,6 @@ main {
     display: none;
   }
 
-  #bottomNavHome {
-    padding-top: 40px;
-  }
-
   #hrNavDesktop {
     margin-top: 10px;
     width: 100%;
@@ -454,6 +451,18 @@ main {
 
   .mainTopItem:hover {
     background: #444444;
+    cursor: pointer;
+  }
+
+  .threeDots {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: lightgrey;
+    margin: 20px 0 0 20px;
+  }
+
+  .threeDots:hover {
+    color: #fff;
     cursor: pointer;
   }
 
@@ -497,6 +506,28 @@ main {
   #playingBarSongInfo p:hover {
     cursor: pointer;
     text-decoration: underline;
+  }
+
+  /*CARDS ON DESKTOP*/
+  .mbodyMix {
+    background: #1b1b1b;
+    border-radius: 10px;
+  }
+
+  .mbodyMix:hover {
+    background: #262626;
+    cursor: pointer;
+  }
+
+  .mbodyMixImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mbodyMixImg img {
+    border-radius: 10px;
+    width: 100%;
   }
 }
 
