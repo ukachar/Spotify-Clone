@@ -512,6 +512,7 @@ main {
   .mbodyMix {
     background: #1b1b1b;
     border-radius: 10px;
+    width: 25%;
   }
 
   .mbodyMix:hover {
@@ -523,17 +524,37 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
   }
 
   .mbodyMixImg img {
     border-radius: 10px;
     width: 100%;
   }
+
+  .mbodyMixDesc {
+    text-align: center;
+  }
+
+  .mbodyItems {
+    gap: 15px;
+  }
+
+  .mbodyHeader {
+    padding-top: 50px;
+  }
 }
 
 /*MOBILE VIEW*/
 @media screen and (max-width: 800px) {
   .hideOnMobile {
+    display: none;
+  }
+}
+
+/* SPECIAL VIEW*/
+@media screen and (max-width: 1000px) {
+  .hideOnThousand {
     display: none;
   }
 }
