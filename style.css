@@ -477,11 +477,14 @@ main {
     background: red; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     overflow-y: hidden;
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    font-size: 14px;
+    font-size: 14px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .playingBarSong {
@@ -542,6 +545,10 @@ main {
 
   .mbodyHeader {
     padding-top: 50px;
+  }
+
+  .playingBarCenter {
+    justify-content: center;
   }
 }
 
