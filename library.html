@@ -141,6 +141,7 @@
     </main>
 
     <div class="bottomNav">
+      <div class="threeDots hideOnMobile">...</div>
       <a href="index.html">
         <div id="bottomNavHome">
           <img src="img/icons/home.png" alt="Home" />
@@ -156,9 +157,69 @@
       <a href="library.html"
         ><div id="bottomNavLib">
           <img src="img/icons/library.png" alt="" />
-          Library
+          <span class="hideOnMobile">Your&nbsp;</span> Library
         </div></a
       >
+      <div class="hideOnMobile" style="margin-top: 20px; width: 100%">
+        <a href="library.html"
+          ><div id="bottomNavLib" style="justify-content: start">
+            <img
+              src="img/icons/create_playlist.png"
+              alt=""
+              style="filter: invert(100%)"
+            />
+            Create Playlist
+          </div></a
+        >
+        <a href="library.html"
+          ><div id="bottomNavLib" style="justify-content: start">
+            <img src="img/icons/liked_songs.png" alt="" />
+            Liked Songs
+          </div></a
+        >
+        <hr id="hrNavDesktop" />
+
+        <div class="bottomNavPlaylists">
+          <p>2000s Rock/Alt mix</p>
+          <p>Best hits for sunday chill</p>
+          <p>Rage Against The Machine radio mix</p>
+          <p>Cypress Hill BEST OF</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="playingBar hideOnMobile">
+      <div class="playingBarSong">
+        <img src="img/chill.jpg" alt="" />
+        <div id="playingBarSongInfo">
+          <p>Lick a Shot</p>
+          <p style="font-size: x-small">Cypress Hill</p>
+        </div>
+      </div>
+      <div class="centerPlay">
+        <div class="progressControls">
+          <img src="img/icons/prev.png" alt="" id="prevButton" />
+          <img
+            src="img/icons/play.png"
+            id="playButton"
+            style="margin: 0 5px"
+            alt=""
+          />
+          <img src="img/icons/next.png" id="nextButton" alt="" />
+        </div>
+
+        <div class="playingBarCenter">
+          <div class="progress"></div>
+        </div>
+      </div>
+
+      <div class="volume" id="volume">
+        <div class="playingBarCenter">
+          <div class="progress">
+            <div class="volumeDot" id="volumeDot" style="display: none"></div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- <script type="text/javascript" src="app.js"></script> -->
   </body>
